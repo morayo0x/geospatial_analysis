@@ -15,7 +15,7 @@ Underneath, it depends on two important library:
 
 	> The GIS data format is endowed with a single geometric attribute (e.g. type of geometric object, coordinates, length/distance, area, bounds e.t.c) which indicates what the simple data format represents
 
-## Shapely
+### Shapely
 The geometric objects types used in shapely are:
 - point implemented by the Point class
 - collection of points is implemented by the MultiPoint class
@@ -28,3 +28,22 @@ The geometric objects types used in shapely are:
 
 
 > it is important to note that there are no smooth (or continous) curve in shapely
+
+### Fiona
+
+As described above, there are different GIS file format for encodinng geographical information. Examples include
+
+- Raster format: this divides a 2D space into rectangular grid of rows and columns of cells having a specific length and width. Each cell has a stored value - representing a geometric feature of the data. It stores both discrete and continous information. Example implementation fo this file format includes but not limited to DRG, IMG, JPEG200, MrSID e.t.c.
+
+ > this format is typically used in remote sensing imagery, weather and climate, population density, soil properties e.t.c.
+
+- Vector format: stores discrete information about a discrete object such as a point, line or polygon. Example implementation fo this file format includes but not limited to Shapefile, GeoJson, GML, KML, MapInfo, Spatialite e.t.c.
+
+
+-- -
+### Sources: 
+ - Kaggle Geospatial Tutorial: [https://www.kaggle.com/code/alexisbcook/your-first-map]
+ - GeoPandas Website: [http://geopandas.org/]
+ - Shapely Website: [https://shapely.readthedocs.io/]
+ - Fiona website: [https://fiona.readthedocs.io/]
+ - GIS file format: [https://en.wikipedia.org/wiki/GIS_file_format]
