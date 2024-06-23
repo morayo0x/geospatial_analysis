@@ -13,9 +13,7 @@ Underneath, it depends on two important library:
 
 - fiona: it is used to read a Geographic Information System (GIS) data format from a file/memory into a simple format such as a row or records, and write data from a simple format into a GIS data format. 
 
-	> The GIS data format is endowed with a single geometric attribute (e.g. length/distance, area, bounds e.t.c) which indicates what the simple data format represents
-
--- -
+	> The GIS data format is endowed with a single geometric attribute (e.g. type of geometric object, coordinates, length/distance, area, bounds e.t.c) which indicates what the simple data format represents
 
 ## Shapely
 The geometric objects types used in shapely are:
